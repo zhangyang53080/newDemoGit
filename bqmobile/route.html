@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>交通路线</title>
+		<meta name="keywords" content="百强水乐园" />
+		<meta name="description" content="百强水乐园" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="./css/public.css" />
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/rem.js"></script>
+		<script src="./js/swiper.min.js"></script>
+	</head>
+	<body>
+		<!-- header -->
+		<div class="header no_index header_n">
+			<div class="menu">
+				<img src="./images/index/icon1.png" alt="">
+			</div>
+			<div class="logo flex u-col-center">
+				<img src="./images/index/logo.png" alt="">
+				<span>百强水乐园</span>
+			</div>
+			<div class="right_text">一键购票</div>
+		</div>
+
+		<!-- nav -->
+		<div class="nav">
+			<div class="nav_wrap">
+				<div class="nav_top">
+					<img src="images/index/icon2.png" alt="" class="yj_close">
+				</div>
+				<ul class="f_nav">
+					<li><a href="./index.html">首页</a></li>
+					<li><a href="./introduce.html">乐园介绍</a></li>
+					<li><a href="./active.html">乐园活动</a></li>
+					<li><a href="./naturehot.html">自然温泉</a></li>
+					<li><a href="./hotel.html">拾光海岸</a></li>
+					<li><a href="./map.html">园区地图</a></li>
+					<li><a href="">在线购票</a></li>
+				</ul>
+				<ul class="f_nav">
+					<li><a href="./notice.html">游玩须知</a></li>
+					<li><a href="./vipcard.html">乐园酷卡</a></li>
+					<li><a href="./record.html">打卡圣地</a></li>
+					<li><a href="./food.html">餐饮商品</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="map" id="map"></div>
+		<script src="./js/common.js"></script>
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=45b27c7ecdf956b614779c6bde85fd0b&plugin=AMap.Transfer"></script>
+		<script>
+			var map = new AMap.Map('map', {
+				resizeEnable: true, //是否监控地图容器尺寸变化
+				zoom: 18, //初始化地图层级
+			});
+			var position = new AMap.LngLat(126.758285, 45.773902); // 标准写法
+			map.setCenter(position);
+			var marker = new AMap.Marker({
+				icon: "./images/28.png",
+				position: [126.758285, 45.773902]
+			});
+			map.add(marker);
+			// 获取地图中心点
+			var currentCenter = map.getCenter();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+/* loading */
+.loading {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: #8695a7;
+}
+
+.loading>div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.loading_con {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.loading_logo {
+	width: 3.2rem;
+	margin: 0 auto;
+	display: block;
+}
+
+.loading_con p {
+	text-align: center;
+	font: .28rem/.36rem '';
+	color: #FFFFFF;
+	padding: .22rem 0;
+}
+
+.loading_porss {
+	overflow: hidden;
+	width: 1.8rem;
+	height: .12rem;
+	border: solid #fff 1px;
+	border-radius: .09rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.loading_porss em {
+	display: block;
+	width: 0;
+	height: .05rem;
+	margin: .02rem;
+	background: #fff;
+}
+
+/* index */
+.index {
+	width: 100%;
+	/* padding-top: .88rem; */
+	height: 100%;
+}
+
+/* 视频弹框 */
+
+.video_music {
+	position: absolute;
+	top: 1.2rem;
+	width: .64rem;
+	height: .64rem;
+	left: .32rem;
+	z-index: 10;
+}
+
+.video_music img {
+	width: 100%;
+	display: none;
+}
+
+.video_music.play img.play {
+	display: block;
+}
+
+.video_music.play img.pause {
+	display: none;
+}
+
+.video_music.pause img.play {
+	display: none;
+}
+
+.video_music.pause img.pause {
+	display: block;
+}
+
+.swiper_op {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.index_video {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.index_video canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.swiper_op div {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 100%;
+	margin-top: -1.12rem;
+	text-align: center;
+}
+
+.swiper_op img {
+	display: block;
+	margin: 0 auto;
+	width: 5.36rem;
+	margin-bottom: .24rem;
+}
+
+.swiper_op .text {
+	font-size: .28rem;
+	color: white;
+}
+
+.swiper_op p {
+	font: .72rem/1.12rem '';
+	color: #fff;
+	text-align: center;
+	letter-spacing: .12rem;
+	text-indent: .12rem;
+}
+
+.swiper_re .fp-scroller {
+	padding-top: .88rem;
+}
+
+.s_h {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: .83rem;
+	left: 0;
+	z-index: 2;
+	display: none;
+}
+
+.s_h h6 {
+	font-size: .24rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: .34rem;
+	text-align: center;
+}
+
+.s_h img {
+	display: block;
+	width: .24rem;
+	margin: .2rem auto 0;
+	-webkit-animation: upDown 1.5s infinite;
+	animation: upDown 1.5s infinite;
+}
+
+@-webkit-keyframes upDown {
+
+	0%,
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+
+	50% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes upDown {
+
+	0%,
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+
+	50% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+/* 第二页第一个轮播 */
+.first_nav {
+	margin: .5rem auto;
+}
+
+.first_nav>div {
+	background-color: #8695A7;
+}
+
+.first_nav span {
+	font-size: .28rem;
+	padding: .08rem .17rem;
+	color: white;
+}
+
+.first_nav span.hover {
+	background-color: #24b689;
+}
+
+.my_swiper {
+	height: 6.8rem;
+}
+
+.my_swiper .swiper-container {
+	margin-top: .4rem;
+}
+
+.my_swiper .swiper-slide {
+	width: 75%;
+	margin-left: -6%;
+	-webkit-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transform: scale(.8);
+	-webkit-box-shadow: 0 0 .3rem rgba(41, 41, 41, .25);
+	box-shadow: 0 0 .3rem rgba(41, 41, 41, .25);
+	border-radius: .2rem;
+}
+
+.my_swiper .swiper-slide p {
+	font-size: .32rem;
+	text-align: center;
+	margin-top: .3rem;
+}
+
+.my_swiper .swiper-slide span {
+	font-size: .22rem;
+	margin: .2rem .3rem;
+	display: block;
+	line-height: .36rem;
+	height: .72rem;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	color: #808080;
+}
+
+.my_swiper .swiper-slide button {
+	background-color: #24B689;
+	padding: .15rem 1.1rem;
+	border-radius: .4rem;
+	color: white;
+	text-align: center;
+	display: block;
+	margin: .3rem auto;
+	-webkit-box-shadow: .04rem .04rem .08rem rgba(36, 182, 137, .52);
+	box-shadow: .04rem .04rem .08rem rgba(36, 182, 137, .52);
+	outline: none;
+}
+
+.my_swiper .swiper-slide-prev {
+	margin-right: 10% !important;
+}
+
+.my_swiper .swiper-slide-active {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all ease 400ms;
+	-o-transition: all ease 400ms;
+	transition: all ease 400ms;
+	margin: 0.2rem .2rem .2rem -10%;
+	/* margin-left: -10%; */
+}
+
+.my_swiper .swiper-slide-next {
+	margin-left: -14%;
+}
+
+/* 乐园酷卡 */
+.card_swiper {
+	overflow: hidden;
+}
+
+.card_swiper img {
+	display: block;
+}
+
+.card_wrap {
+	margin-top: .5rem;
+	padding-top: .5rem;
+	background-color: #f2f2f2;
+}
+
+.card_title img {
+	width: .24rem;
+}
+
+.card_title span {
+	font-size: .28rem;
+	margin: 0 .14rem;
+}
+
+.card_nav>div {
+	background-color: #8695A7;
+}
+
+.card_nav {
+	margin-top: .4rem;
+}
+
+.card_nav span {
+	font-size: .28rem;
+	padding: .08rem .17rem;
+	color: white;
+}
+
+.card_nav span.hover {
+	background-color: #24b689;
+}
+
+.card_swiper .swiper-container {
+	margin-top: .4rem;
+}
+
+.card_swiper .swiper-slide {
+	width: 75%;
+	margin-left: -6%;
+	-webkit-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transform: scale(.8);
+	-webkit-box-shadow: 0 0 .3rem rgba(41, 41, 41, .25);
+	box-shadow: 0 0 .3rem rgba(41, 41, 41, .25);
+	border-radius: .2rem;
+	-webkit-transition: all ease 400ms;
+	-o-transition: all ease 400ms;
+	transition: all ease 400ms;
+}
+
+.card_swiper .swiper-slide-prev {
+	margin-right: 10% !important;
+}
+
+.card_swiper .swiper-slide-active {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	margin: 0.2rem .2rem .2rem -10%;
+}
+
+.card_swiper .swiper-slide-next {
+	margin-left: -14%;
+}
+
+.card_btn button {
+	display: block;
+	margin: .4rem auto;
+	padding: .12rem .4rem;
+	background-color: #24B689;
+	color: white;
+	border-radius: .5rem;
+}

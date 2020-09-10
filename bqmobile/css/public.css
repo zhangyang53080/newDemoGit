@@ -1,0 +1,1389 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-family: "wryh";
+}
+
+ul,
+ol,
+li,
+dl,
+dd,
+dt {
+	list-style-type: none;
+	line-height: normal;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'wryh', Arial;
+	font-size: 12px;
+}
+
+body {
+	max-width: 7.5rem;
+	margin: 0 auto !important;
+	-webkit-overflow-scrolling: touch;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: 'wryh', Arial;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: normal;
+	font-family: 'wryh', Arial;
+}
+
+h1 {
+	font-size: 0.36rem;
+}
+
+h2 {
+	font-size: 0.24rem;
+}
+
+h3 {
+	font-size: 0.22rem;
+}
+
+h4 {
+	font-size: 0.18rem;
+}
+
+h5 {
+	font-size: 0.14rem;
+}
+
+h6 {
+	font-size: 0.12rem;
+}
+
+input,
+table,
+tr,
+td {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+button,
+table {
+	border: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+select {
+	margin: 0;
+	padding: 0;
+	font-family: 'wryh', Arial;
+}
+
+textarea {
+	resize: none;
+	outline: 0;
+}
+
+input {
+	outline: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex-col {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.u-row-center {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.u-col-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.index_body,
+.index_html {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.u-row-beteen {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.hide {
+	display: none !important;
+}
+
+.Popups {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: rgba(44, 44, 44, .5);
+	width: 100%;
+	height: 100%;
+}
+
+.Popups .Popups_swiper_wrap {
+	width: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.Popups .big_swiper img {
+	border-top-left-radius: .2rem;
+	border-top-right-radius: .2rem;
+	display: block;
+}
+
+.big_swiper .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.big_swiper .swiper-pagination-bullet {
+	background-color: #fff;
+}
+
+.samll_swiper_wrap {
+	background-color: #fff;
+}
+
+.samll_swiper .swiper-container {}
+
+.Popups .samll_swiper {
+	padding: .2rem .3rem;
+	background-color: #fff;
+	border-bottom-right-radius: .2rem;
+	border-bottom-left-radius: .2rem;
+	height: 100%;
+}
+
+.samll_swiper .swiper-container {}
+
+.Popups .samll_swiper img {
+	display: block;
+	border-radius: .1rem;
+}
+
+.Popups_swiper_wrap .swiper-slide-thumb-active img {
+	border: .02rem solid #24b689;
+}
+
+.Features {
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.Features>div {
+	margin: .2rem auto;
+}
+
+.Features .view img {
+	width: .27rem;
+	height: .17rem;
+	margin-right: .05rem;
+}
+
+.Features .like img {
+	width: .24rem;
+	height: .23rem;
+	margin-right: .05rem;
+}
+
+.Features .comment img {
+	width: .24rem;
+	height: .22rem;
+	margin-right: .05rem;
+}
+
+.Features .like {
+	margin: 0 .3rem;
+}
+
+@font-face {
+	font-family: 'zhanku';
+	src: url('../fonts/zhanku.ttf');
+}
+
+@font-face {
+	font-family: 'wryh';
+	src: url('../fonts/msyh.ttf');
+}
+
+/* header */
+.header {
+	height: .88rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: #8695a7;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0 .3rem;
+}
+
+.header .menu {
+	width: .42rem;
+}
+
+.header .menu .back {
+	width: .18rem;
+}
+
+.header .logo {
+	font-size: .28rem;
+	color: white;
+}
+
+.header .logo img {
+	width: .35rem;
+	margin-right: .14rem;
+}
+
+.header .right_text {
+	font-size: .28rem;
+	color: #fff;
+}
+
+.header.no_index {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background: rgba(134, 149, 167, 0);
+}
+
+.header.on {
+	background: rgba(134, 149, 167, 1) !important;
+}
+
+.header.no_index.header_n {
+	background: rgba(134, 149, 167, 1);
+}
+
+/* 导航 */
+/* nav */
+.nav {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, .2);
+	max-height: 100%;
+	overflow-y: scroll;
+	display: none;
+}
+
+.nav_wrap {
+	width: 5.6rem;
+	height: 100%;
+	background: url(../images/index/left_nav.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 0.22rem 0 0.16rem rgba(41, 41, 41, .5);
+	box-shadow: 0.22rem 0 0.16rem rgba(41, 41, 41, .5);
+}
+
+.nav .nav_top {
+	width: 100%;
+	height: .88rem;
+	position: relative;
+}
+
+.nav .nav_top img {
+	width: .32rem;
+	position: absolute;
+	left: .3rem;
+	top: .35rem;
+}
+
+.f_nav {
+	margin: 0 .3rem;
+	border-bottom: solid #a0e8ff 0.01rem;
+	padding-bottom: .28rem;
+}
+
+.f_nav li {
+	line-height: .9rem;
+	position: relative;
+	text-indent: .32rem;
+}
+
+.f_nav li a {
+	color: rgba(44, 44, 56, 1);
+	font-size: .28rem;
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+
+.f_nav li dl {
+	display: none;
+}
+
+.f_nav li.on img {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+/* 页尾 */
+.footer {
+	background-color: #F2F2F2;
+	padding: .5rem .6rem;
+}
+
+.footer_wrap {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.footer_wrap .left_footer {
+	width: 3rem;
+}
+
+.left_footer .lxwm {
+	font-size: .28rem;
+	color: #333333;
+}
+
+.line {
+	height: .04rem;
+	width: .5rem;
+	background-color: #24B689;
+	margin: .08rem 0 .1rem;
+}
+
+.left_footer .hlrx {
+	font: .22rem/.36rem '';
+	color: #808080;
+}
+
+.left_footer .dz {
+	font: .22rem/.36rem '';
+	color: #808080;
+}
+
+.left_footer .link_box {
+	margin-top: .22rem;
+}
+
+.left_footer .link_box a {
+	display: block;
+	font: .22rem/.5rem '';
+	color: #808080;
+}
+
+.right_footer {
+	width: 2.3rem;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.right_footer img {
+	width: 1rem;
+	height: 1rem;
+	display: block;
+}
+
+.right_footer span {
+	text-align: center;
+	display: block;
+	font: .22rem/.36rem '';
+	margin-top: .06rem;
+	margin-bottom: .12rem;
+	color: #808080;
+}
+
+.right_footer>div {
+	margin-right: .3rem;
+}
+
+.right_footer>div:nth-child(even) {
+	margin-right: 0;
+}
+
+.footer_center img {
+	width: .3rem;
+}
+
+.footer_center span {
+	color: #797979;
+	margin-left: .06rem;
+	font-size: .28rem;
+}
+
+.footer_center p {
+	font-size: .14rem;
+	color: #808080;
+	margin-top: .13rem;
+	text-align: center;
+}
+
+/* 公共的顶部banner */
+.mdd_deatil {
+	width: 100%;
+	height: auto;
+}
+
+.ny_banner {
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+.ny_banner img {
+	display: block;
+	width: 100%;
+}
+
+.ny_banner>div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .45);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.ny_banner>div>div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.ny_banner>div>div h1 {
+	font-size: .4rem;
+	color: rgba(255, 255, 255, 1);
+	letter-spacing: .04rem;
+	text-indent: .04rem;
+	text-align: center;
+	color: #fff;
+}
+
+.ny_banner>div>div h6 {
+	font-size: .28rem;
+	color: rgba(255, 255, 255, 1);
+	line-height: .48rem;
+	text-align: center;
+	color: #fff;
+	margin-top: .22rem;
+}
+
+.about_a {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: .5rem 0 0 0;
+}
+
+.about_a h2 {
+	font: .5rem/.6rem 'zhanku';
+	color: #f4f5ff;
+	text-align: center;
+	text-indent: 1.1rem;
+}
+
+.about_a h3 {
+	font: .42rem/.4rem '';
+	color: #333333;
+	text-align: center;
+	margin-bottom: .4rem;
+}
+
+.about_a p {
+	font-size: .28rem;
+	font-weight: 400;
+	color: #808080;
+	line-height: .4rem;
+	padding: 0 .32rem;
+	margin-bottom: .32rem;
+	text-align: justify;
+	text-indent: .4rem;
+}
+
+.about_swiper .swiper-container {
+	padding: .4rem 0 .9rem 0;
+}
+
+.about_swiper img {
+	display: block;
+}
+
+.about_swiper .swiper-container-horizontal>.swiper-pagination-bullets {
+	bottom: .5rem;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #030000;
+}
+
+/* 乐园活动 */
+.active_wrap {
+	padding-top: .88rem;
+}
+
+.active_list_wrap {
+	padding-bottom: .4rem;
+}
+
+.active_list {
+	width: calc(100% - .6rem);
+	margin: 0 auto;
+	padding-bottom: .3rem;
+	border-bottom: .02rem dashed #c5c5c5;
+	padding-top: .3rem;
+	height: 2.2rem;
+}
+
+.active_list:first-child {
+	padding-top: 0;
+	height: auto;
+	display: block;
+}
+
+.active_list:first-child .time {
+	margin-top: .1rem;
+}
+
+.active_list:first-child .ms {
+	margin: 0;
+}
+
+.active_list:first-child .title {
+	margin-top: .14rem;
+}
+
+.active_list .time {
+	font-size: .22rem;
+	color: #24b689;
+	text-indent: 0.02rem;
+}
+
+.active_list .title {
+	font-size: .30rem;
+	color: #535353;
+}
+
+.active_list .ms {
+	font-size: .22rem;
+	color: #808080;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	/* margin-top: .1rem;
+     */
+	/* margin-bottom: .1rem;
+     */
+}
+
+.active_list .left-img {
+	width: 2.95rem;
+	height: 100%;
+	border-radius: .1rem;
+}
+
+.active_list .left-img img {
+	border-radius: .1rem;
+	height: 100%;
+}
+
+.right_active {
+	width: calc(100% - 3.4rem);
+	height: 100%;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.activeDetail_text {
+	font-size: .28rem;
+	font-weight: 400;
+	color: #808080;
+	line-height: .4rem;
+	padding: 0 .32rem;
+	margin-bottom: .32rem;
+	text-align: justify;
+	text-indent: .4rem;
+}
+
+/* 自然温泉 */
+.naturehot_wrap {
+	padding-top: .88rem;
+}
+
+.naturehot_wrap .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.naturehot_wrap .swiper-pagination-bullet {
+	background: #fff;
+}
+
+/* 拾光海岸 */
+.hotel_wrap {
+	padding-top: .88rem;
+}
+
+.hotel_nav_wrap {
+	overflow: scroll;
+}
+
+.hotel_swiper {
+	min-height: 6rem;
+}
+
+.hotel_swiper .swiper-slide {
+	width: 75%;
+	-webkit-transform: scale(.9) !important;
+	-ms-transform: scale(.9) !important;
+	transform: scale(.9) !important;
+	-webkit-box-shadow: 0 0 .3rem rgba(41, 41, 41, .25);
+	box-shadow: 0 0 .3rem rgba(41, 41, 41, .25);
+	border-radius: .2rem;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+}
+
+.hotel_swiper .swiper-slide-prev {
+	margin-right: 10% !important;
+}
+
+.hotel_swiper .swiper-slide-active {
+	-webkit-transform: scale(1) !important;
+	-ms-transform: scale(1) !important;
+	transform: scale(1) !important;
+	-webkit-transition: all ease 400ms;
+	-o-transition: all ease 400ms;
+	transition: all ease 400ms;
+	margin: 0.2rem .2rem .2rem -10%;
+	/* margin-left: -10%;
+     */
+}
+
+.hotel_swiper .swiper-slide-next {
+	margin-left: -10%;
+}
+
+.hotel_room {
+	padding: .3rem;
+}
+
+.hotel_swiper img {
+	border-top-left-radius: .2rem;
+	border-top-right-radius: .2rem;
+}
+
+.hotel_swiper .swiper-slide p {
+	font-size: .32rem;
+	text-align: center;
+	margin-top: .3rem;
+}
+
+.hotel_swiper .swiper-slide span {
+	font-size: .22rem;
+	margin: .2rem .3rem;
+	display: block;
+	line-height: .36rem;
+	height: .72rem;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	color: #808080;
+}
+
+.hotel_swiper .swiper-slide button {
+	background-color: #24B689;
+	padding: .15rem 1.1rem;
+	border-radius: .4rem;
+	color: white;
+	text-align: center;
+	display: block;
+	margin: .3rem auto;
+	-webkit-box-shadow: .04rem .04rem .08rem rgba(36, 182, 137, .52);
+	box-shadow: .04rem .04rem .08rem rgba(36, 182, 137, .52);
+	outline: none;
+}
+
+.hotel_swiper .magnifier {
+	position: absolute;
+	right: .2rem;
+	top: .2rem;
+	width: .44rem;
+}
+
+/* 游玩须知 */
+.notice_wrap {
+	padding-top: .88rem;
+}
+
+.notice_p {
+	padding: .3rem;
+	line-height: .48rem;
+}
+
+.notice_p p {
+	font-size: .24rem;
+	color: #808080;
+	text-align: justify;
+}
+
+/* 乐园酷卡 */
+.card_wrap {
+	padding-top: .88rem;
+}
+
+.card_list {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 .3rem;
+	display: none;
+	overflow: hidden;
+}
+
+.card_list:first-child {
+	display: block;
+}
+
+.card_list>a {
+	width: 50%;
+	margin-bottom: .4rem;
+	text-align: center;
+	font-size: .3rem;
+	float: left;
+	color: inherit;
+}
+
+.card_list>a:nth-child(odd) {
+	padding-right: .15rem;
+}
+
+.card_list>a:nth-child(even) {
+	padding-left: .15rem;
+}
+
+.card_list img {
+	border-radius: .1rem;
+}
+
+.card_list p {
+	height: .4rem;
+	line-height: .4rem;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+}
+
+.lykk_nav {
+	width: 7rem;
+	margin: .5rem auto;
+}
+
+.lykk_nav span {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background-color: #8695A7;
+	font-size: .28rem;
+	height: .6rem;
+	line-height: .6rem;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+.lykk_nav span a {
+	position: absolute;
+	left: 0;
+	top: .06rem;
+	background-color: #fff;
+	z-index: 1;
+	width: .02rem;
+	height: .48rem;
+}
+
+.lykk_nav span.hover {
+	background-color: #f01a29;
+}
+
+.lykk_nav span.hover a {
+	background-color: transparent;
+}
+
+/* 乐园酷卡详情 */
+.card_detail_wrap {
+	padding-top: .88rem;
+}
+
+.card_detail {
+	padding: .3rem .3rem .5rem;
+}
+
+.card_detail p {
+	font-size: .32rem;
+	margin-bottom: .08rem;
+}
+
+.card_detail span {
+	font-size: .24rem;
+	color: #858585;
+}
+
+/* 打卡圣地 */
+.record_list {
+	padding: .3rem .3rem 0;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.record_list .img-box {
+	width: 50%;
+	margin-bottom: .2rem;
+}
+
+.record_list .img-box:nth-child(even) {
+	padding-left: .1rem;
+}
+
+.record_list .img-box:nth-child(odd) {
+	padding-right: .1rem;
+}
+
+.record_list .img-box img {
+	display: block;
+}
+
+.record_btn {
+	overflow: hidden;
+}
+
+.record_btn button {
+	background-color: #24B689;
+	padding: .15rem 1.1rem;
+	border-radius: .4rem;
+	color: white;
+	text-align: center;
+	display: block;
+	margin: .3rem auto;
+	-webkit-box-shadow: .04rem .04rem .08rem rgba(36, 182, 137, .52);
+	box-shadow: .04rem .04rem .08rem rgba(36, 182, 137, .52);
+	outline: none;
+}
+
+/* 评论 */
+.comment_wrap {
+	overflow: hidden;
+	background-color: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+/*浮动*/
+.pull-right {
+	float: right !important;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+.content {
+	float: left;
+}
+
+.flex-text-wrap,
+pre {
+	margin: 0 !important;
+}
+
+.commentAll {
+	padding: .3rem;
+	border: 1px solid #ededed;
+	margin: .2rem auto;
+}
+
+.plBtn {
+	width: 1rem;
+	padding: .1rem 0;
+	background-color: #339b53;
+	text-align: center;
+	display: block;
+	float: right;
+	color: #FFFFFF;
+	font-size: 0.24rem;
+	border-radius: 0.06rem;
+	margin-right: 0.02rem;
+	margin-top: 0.2rem;
+}
+
+.plBtn:hover {
+	background-color: #2f904d;
+}
+
+/*----------评论区域 begin----------*/
+.comment-show {
+	margin-top: 0.2rem;
+}
+
+.comment-show-con {
+	width: 100%;
+	border-top: 0.01rem solid #EDEDED;
+	padding: .1rem 0;
+}
+
+.comment-show-con-img {
+	width: .8rem;
+	height: .8rem;
+	overflow: hidden;
+	border-radius: .4rem;
+}
+
+.comment-show-con-list {
+	width: calc(100% - 1.2rem);
+	margin-left: 3%;
+}
+
+.pl-text {
+	width: 100%;
+	margin-top: 0.07rem;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.date-dz {
+	width: 100%;
+	float: left;
+}
+
+.hf-list-con {
+	float: left;
+	width: 100%;
+	background-color: #eaeaec;
+	margin-top: 0.07rem;
+}
+
+.comment-size-name {
+	font-size: 0.24rem;
+	color: #339b53;
+}
+
+.my-pl-con {
+	font-size: 0.24rem;
+	color: #8b8b8b;
+	width: 100%;
+}
+
+.date-dz-left {
+	font-size: 0.24rem;
+	color: #8b8b8b;
+	display: block;
+	padding-top: 0.18rem;
+}
+
+.comment-time,
+.comment-pl-block {
+	padding-top: 0.07rem;
+}
+
+.comment-pl-block {
+	margin-top: 0;
+}
+
+.date-dz-right {
+	display: block;
+	padding-top: 0.06rem;
+	padding-right: 0.18rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.removeBlock {
+	float: left;
+	font-size: 0.24rem;
+	color: #8b8b8b;
+	margin-right: 0.24rem;
+	display: block;
+	opacity: 0;
+}
+
+.hf-con-block {
+	display: block;
+}
+
+.date-dz-pl,
+.date-dz-line,
+.date-dz-z {
+	font-size: 0.24rem;
+	color: #8b8b8b;
+}
+
+.date-dz-line {
+	display: block;
+	padding: 0 0.2rem;
+}
+
+.date-dz-z-click-red {
+	width: 0.17rem;
+	height: 0.17rem;
+	display: block;
+	float: left;
+	background-image: url(../images/icon-all_01.png);
+	background-repeat: no-repeat;
+	background-position: -0.06rem -1.98rem;
+	margin-right: 0.05rem;
+}
+
+.z-num {
+	font-style: normal;
+}
+
+.date-dz-z-click {
+	color: #b83b44;
+}
+
+.red {
+	background-position: -0.06rem -1.19rem !important;
+}
+
+.hf-pl {
+	width: 1rem;
+	padding: .1rem 0;
+	background-color: #339b53;
+	text-align: center;
+	display: block;
+	float: right;
+	color: #FFFFFF;
+	font-size: 0.24rem;
+	border-radius: 0.06rem;
+	margin-right: 0.02rem;
+	margin-top: 0.2rem;
+}
+
+.hf-con {
+	width: 100%;
+	margin-top: 0.24rem;
+}
+
+.hf-input {
+	font-size: 0.24rem;
+}
+
+.all-pl-con {
+	width: 96%;
+	padding: 2% 0;
+	float: left;
+	margin: 0 2%;
+}
+
+.atName {
+	font-size: 0.24rem;
+	color: #339b53;
+}
+
+.hfpl-text {
+	margin-top: 0;
+}
+
+.date-dz:hover .removeBlock {
+	opacity: 1;
+}
+
+.hf-list-con .all-pl-con {
+	border-top: 0.01rem solid #d9d9d9;
+	padding-bottom: 0.24rem;
+}
+
+.hf-list-con .all-pl-con:first-child {
+	border-top: 0;
+}
+
+/* 餐饮 */
+.food_wrap {
+	padding-top: .88rem;
+}
+
+.food_wrap .title {
+	width: 3.67rem;
+	margin: .4rem auto;
+}
+
+.food_wrap .title img {
+	display: block;
+}
+
+.food_list_wrap {
+	padding: 0 .3rem;
+}
+
+.food_list {
+	position: relative;
+	margin-bottom: .3rem;
+}
+
+.food_list img {
+	display: block;
+	border-radius: .3rem;
+}
+
+.food_list p {
+	position: absolute;
+	bottom: .5rem;
+	left: .5rem;
+	right: .5rem;
+	background-color: #fff;
+	height: .5rem;
+	line-height: .5rem;
+	text-align: center;
+	border-radius: .1rem;
+}
+
+/* 地图 */
+.map_warp {
+	overflow: auto;
+	padding-top: .88rem;
+}
+
+.map_warp img {
+	width: 20rem;
+	max-width: none;
+	display: block;
+}
+
+/* 交通路线 */
+.map {
+	padding-top: .88rem;
+	height: calc(100vh);
+}
+
+.amap-logo {
+	display: none !important;
+}
+
+.amap-copyright {
+	display: none !important;
+}
+
+/* 人才招聘 */
+.job_wrap {
+	padding-top: .88rem;
+}
+
+.job_wrap img {
+	display: block;
+}
+
+.job_list_wrap {}
+
+.job_list {
+	width: calc(100% - .6rem);
+	overflow: hidden;
+	padding: .3rem 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #e4e4e4;
+	display: block;
+	color: inherit;
+}
+
+.job_list p {
+	font-size: .32rem;
+	padding-bottom: .04rem;
+}
+
+.job_list span {
+	font-size: .18rem;
+	color: #808080;
+}
+
+.job_list .bumen {
+	color: #626262;
+}
+
+
+.job_detail>div {
+	margin: 0 .3rem;
+	font-size: .36rem;
+	color: #636363;
+	line-height: .46rem;
+}
+
+.job_detail .line {
+	width: 100%;
+	height: .08rem;
+	background-color: #e5e5e5;
+	margin-top: .18rem;
+	margin-left: 0;
+}
+
+.job_detail .dizhi {
+	font-size: .24rem;
+}
+
+.job_detail .ms_title {
+	margin-bottom: .4rem;
+}
+
+.job_detail .title {
+	margin-top: .2rem;
+	margin-bottom: .1rem;
+	font-size: .34rem;
+	color: #1f1f1f;
+}
+
+.job_detail .ms {
+	color: #626262;
+	font-size: .26rem;
+}
+
+.job_detail .ms div {
+	font-size: .26rem;
+	margin-bottom: .4rem;
+}
+
+/* 合作单位 */
+.cooperator_wrap {
+	padding-top: .88rem;
+}
+
+.cooperator {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.cooperator a {
+	margin-top: .8rem;
+	width: 50%;
+}
+
+.cooperator a img {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}

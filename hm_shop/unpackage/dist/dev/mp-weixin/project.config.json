@@ -4,11 +4,21 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"useCompilerModule": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
-	"appid": "wxb66b0408af184727",
+	"appid": "wx9b12fdaf7200ef9d",
 	"projectname": "%E9%BB%91%E9%A9%AC%E5%95%86%E5%9F%8E",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
